@@ -29,10 +29,10 @@ artist_id INT NOT NULL REFERENCES artists(artist_id)
 
 CREATE TABLE IF NOT EXISTS artists_to_albums(
 artist_id INT NOT NULL REFERENCES artists(artist_id),
-albums_id INT NOT NULL REFERENCES albums(albums_id),
+albums_id INT NOT NULL REFERENCES albums(albums_id)
 );
 
 CREATE TABLE IF NOT EXISTS track_to_collections(
 track_id INT NOT NULL REFERENCES track(track_id),
-collection_id INT NOT NULL REFERENCES collections(collection_id),
+collection_id INT NOT NULL REFERENCES collections(collection_id)
 );
