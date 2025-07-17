@@ -32,7 +32,7 @@ artist_id INT NOT NULL REFERENCES artists(artist_id),
 albums_id INT NOT NULL REFERENCES albums(albums_id)
 );
 
-CREATE TABLE IF NOT EXISTS track_to_collections(
+CREATE TABLE IF NOT EXISTS track_to_collection(
 track_id INT NOT NULL REFERENCES track(track_id),
-collection_id INT NOT NULL REFERENCES collections(collection_id)
+collection_id INT NOT NULL REFERENCES collection(collection_id)
 );
