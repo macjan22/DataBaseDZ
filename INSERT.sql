@@ -44,6 +44,16 @@ values (1, 1),
 (4, 4),
 (5, 5);
 
--- to be continued
+insert into genre_to_artists  (genre_id, artist_id)
+values (1, 1),
+(3, 2),
+(4, 3),
+(2, 4),
+(2, 5);
 
-
+insert into track_to_collection (track_id, collection_id)
+values (2, 1),
+(3, 2),
+(5, 3),
+(7, 4),
+(9, 5);
